@@ -1,0 +1,15 @@
+{
+  "originHash" : "1d244c5dcd212b90e585b870fc2020421178712b724f465773f75e133f70e2b2",
+  "pins" : [
+    {
+      "identity" : "datacapture-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Scandit/datacapture-spm",
+      "state" : {
+        "revision" : "9e8030ce4c0e06e5ec32ee9830726ea7bdb4bf7d",
+        "version" : "6.26.0"
+      }
+    }
+  ],
+  "version" : 3
+}
