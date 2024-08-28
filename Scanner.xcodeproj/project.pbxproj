@@ -16,6 +16,12 @@
 		E0A9410B2C7DCFA800DEA3BF /* ScanditBarcodeCapture in Frameworks */ = {isa = PBXBuildFile; productRef = E0A9410A2C7DCFA800DEA3BF /* ScanditBarcodeCapture */; };
 		E0A9410D2C7DCFA800DEA3BF /* ScanditCaptureCore in Frameworks */ = {isa = PBXBuildFile; productRef = E0A9410C2C7DCFA800DEA3BF /* ScanditCaptureCore */; };
 		E0A941102C7DD9EA00DEA3BF /* BarCodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9410F2C7DD9EA00DEA3BF /* BarCodeScannerViewController.swift */; };
+		E0A941122C7ED9CF00DEA3BF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A941112C7ED9CF00DEA3BF /* CoreData.framework */; };
+		E0A941152C7ED9F400DEA3BF /* Barcode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0A941132C7ED9F400DEA3BF /* Barcode.xcdatamodeld */; };
+		E0A941182C7EDB5300DEA3BF /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A941172C7EDB5300DEA3BF /* CoreDataManager.swift */; };
+		E0A9411A2C7EDCB900DEA3BF /* BarCodeScannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A941192C7EDCB900DEA3BF /* BarCodeScannerViewModel.swift */; };
+		E0A9411D2C7F026F00DEA3BF /* BarCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0A9411C2C7F026F00DEA3BF /* BarCodeTableViewCell.xib */; };
+		E0A9411E2C7F026F00DEA3BF /* BarCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A9411B2C7F026F00DEA3BF /* BarCodeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		E0A941002C7DCF1200DEA3BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0A941022C7DCF1200DEA3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0A9410F2C7DD9EA00DEA3BF /* BarCodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerViewController.swift; sourceTree = "<group>"; };
+		E0A941112C7ED9CF00DEA3BF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E0A941142C7ED9F400DEA3BF /* Barcode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Barcode.xcdatamodel; sourceTree = "<group>"; };
+		E0A941172C7EDB5300DEA3BF /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		E0A941192C7EDCB900DEA3BF /* BarCodeScannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeScannerViewModel.swift; sourceTree = "<group>"; };
+		E0A9411B2C7F026F00DEA3BF /* BarCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeTableViewCell.swift; sourceTree = "<group>"; };
+		E0A9411C2C7F026F00DEA3BF /* BarCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarCodeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0A9410B2C7DCFA800DEA3BF /* ScanditBarcodeCapture in Frameworks */,
+				E0A941122C7ED9CF00DEA3BF /* CoreData.framework in Frameworks */,
 				E0A9410D2C7DCFA800DEA3BF /* ScanditCaptureCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,6 +59,7 @@
 		E0A940E82C7DCF1100DEA3BF = {
 			isa = PBXGroup;
 			children = (
+				E0A941132C7ED9F400DEA3BF /* Barcode.xcdatamodeld */,
 				E0A940F32C7DCF1100DEA3BF /* Scanner */,
 				E0A940F22C7DCF1100DEA3BF /* Products */,
 				E0A941092C7DCFA800DEA3BF /* Frameworks */,
@@ -63,10 +77,11 @@
 		E0A940F32C7DCF1100DEA3BF /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				E0A9411F2C7F027900DEA3BF /* BarCodeList */,
+				E0A941162C7EDB4200DEA3BF /* CoreData */,
 				E0A9410E2C7DD9C700DEA3BF /* BarCodeScannerVC */,
 				E0A940F42C7DCF1100DEA3BF /* AppDelegate.swift */,
 				E0A940F62C7DCF1100DEA3BF /* SceneDelegate.swift */,
-				E0A940F82C7DCF1100DEA3BF /* ViewController.swift */,
 				E0A940FA2C7DCF1100DEA3BF /* Main.storyboard */,
 				E0A940FD2C7DCF1200DEA3BF /* Assets.xcassets */,
 				E0A940FF2C7DCF1200DEA3BF /* LaunchScreen.storyboard */,
@@ -78,6 +93,7 @@
 		E0A941092C7DCFA800DEA3BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0A941112C7ED9CF00DEA3BF /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,8 +102,28 @@
 			isa = PBXGroup;
 			children = (
 				E0A9410F2C7DD9EA00DEA3BF /* BarCodeScannerViewController.swift */,
+				E0A941192C7EDCB900DEA3BF /* BarCodeScannerViewModel.swift */,
 			);
 			path = BarCodeScannerVC;
+			sourceTree = "<group>";
+		};
+		E0A941162C7EDB4200DEA3BF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E0A941172C7EDB5300DEA3BF /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E0A9411F2C7F027900DEA3BF /* BarCodeList */ = {
+			isa = PBXGroup;
+			children = (
+				E0A940F82C7DCF1100DEA3BF /* ViewController.swift */,
+				E0A9411B2C7F026F00DEA3BF /* BarCodeTableViewCell.swift */,
+				E0A9411C2C7F026F00DEA3BF /* BarCodeTableViewCell.xib */,
+			);
+			name = BarCodeList;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A9411D2C7F026F00DEA3BF /* BarCodeTableViewCell.xib in Resources */,
 				E0A940FE2C7DCF1200DEA3BF /* Assets.xcassets in Resources */,
 				E0A941012C7DCF1200DEA3BF /* Base in Resources */,
 				E0A940FC2C7DCF1100DEA3BF /* Base in Resources */,
@@ -168,9 +205,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0A9411E2C7F026F00DEA3BF /* BarCodeTableViewCell.swift in Sources */,
+				E0A941182C7EDB5300DEA3BF /* CoreDataManager.swift in Sources */,
+				E0A941152C7ED9F400DEA3BF /* Barcode.xcdatamodeld in Sources */,
 				E0A940F92C7DCF1100DEA3BF /* ViewController.swift in Sources */,
 				E0A940F52C7DCF1100DEA3BF /* AppDelegate.swift in Sources */,
 				E0A941102C7DD9EA00DEA3BF /* BarCodeScannerViewController.swift in Sources */,
+				E0A9411A2C7EDCB900DEA3BF /* BarCodeScannerViewModel.swift in Sources */,
 				E0A940F72C7DCF1100DEA3BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +461,20 @@
 			productName = ScanditCaptureCore;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E0A941132C7ED9F400DEA3BF /* Barcode.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0A941142C7ED9F400DEA3BF /* Barcode.xcdatamodel */,
+			);
+			currentVersion = E0A941142C7ED9F400DEA3BF /* Barcode.xcdatamodel */;
+			name = Barcode.xcdatamodeld;
+			path = "/Users/saurav/Desktop/Scandit/Scandit-Barcode/Barcode.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E0A940E92C7DCF1100DEA3BF /* Project object */;
 }
